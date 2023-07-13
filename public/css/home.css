@@ -1,0 +1,14 @@
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 50%;
+}
+#search{
+    display: inline-flex;
+    margin-left: 10%;
+}
+.green{
+    color: orange;
+}
