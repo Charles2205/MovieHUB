@@ -6,28 +6,29 @@
     <link rel="stylesheet" href="./public/css/bootstrap.css">
     <link rel="stylesheet" href="./public/css/snackbar.min.css">
     <link rel="stylesheet" href="./public/css/home.css">
+    <link rel="shortcut icon" href="./public/imgs/fav.webp" type="image/x-icon">
     <title>MoviesHub</title>
 </head>
-<body>
+<body id="body">
     <!-- Navbar Open -->
 <div class="container  d-flex justify-content-around p-2 flex-fill my-5">
-    <form class="d-flex" role="search">
-        <button class="btn btn-outline-light" type="submit">Home</button>
+    <form class="d-flex">
+        <a class="btn btn-outline-light" href="">Home</a>
         <input class="form-control mx-5 type="search" placeholder="Search movie or show" aria-label="Search">
-        <button class="btn btn-success" type="submit">Search</button>
+        <a id='btnSearch' class="btn btn-success" type="submit">Search</a>
       </form>
     
 </div>
  <!-- Navbar Close -->
 <div class="container d-flex justify-content-around p-2 flex-fill">
-    <h1>All You <span class="green">Need</span> To Know <span class="green">About</span> Your <span class="green">Movies</span></h1>
+    <h1  >All You <span class="green">Need</span> To Know <span class="green">About</span> Your <span class="green">Movies</span></h1>
 </div>
 <!-- card start -->
 <div class="container">
     <!-- set -->
     <div class="row">
-        <div class="col">
-        <img src="./public/imgs/Jack.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col" id="cardDesign">
+            <img src="./public/imgs/Jack.jpg" id="title1" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col">
             <img src="./public/imgs/MV5BMTFiNGVhNzEtNDNhZi00ZjQzLWEwOTgtYWI2N2FiMTZhNTE4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX280_CR0,0,280,414_.jpg" class="img-fluid rounded-start" alt="...">
@@ -38,9 +39,10 @@
         <div class="col">
             <img src="./public/imgs/MV5BNWU2ODI1MTQtMDY1NS00ZjNkLWIxZjAtYmE2ZmJkYmIyNjRjXkEyXkFqcGdeQXVyNzk1MzI3MTI@._V1_QL75_UX280_CR0,14,280,414_.jpg" class="img-fluid rounded-start" alt="...">
         </div>
+        
     </div>
     <div class="row my-5">
-        <div class="col">
+        <!-- <div class="col">
         <img src="./public/imgs//MV5BNjM5YmY5OGQtNTE3OS00Yzc0LWEzOTEtNTJjY2MxMWZlMjU2XkEyXkFqcGdeQXVyMTUzMDA3Mjc2._V1_QL75_UY414_CR26,0,280,414_.jpg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col">
@@ -51,7 +53,7 @@
         </div>
         <div class="col">
             <img src="./public/imgs/MV5BZWIzNDAxMTktMDMzZS00ZjJmLTlhNjYtOGUxYmZlYzVmOGE4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX280_CR0,0,280,414_.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- card end -->
@@ -68,7 +70,7 @@
 
 
 
-<script src="./public/js/snackbar.js"></script>
+<script src="./public/js/snackbar.min.js"></script>
 <script src="./public/js/main.js"></script>
 </body>
 </html>
