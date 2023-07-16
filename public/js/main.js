@@ -46,15 +46,31 @@ async function generateRandomUser(title){
 //      let users= await generateRandomUser()
 //      card1.setAttribute('src',users.Poster)
 // }
-card1.addEventListener('click',infoMovie);
-function infoMovie(){
-    cardDesign.innerHTML = `
-    <div id="stack">
-      <h2 id="build-txt">Ready To Build Your Community?</h2>
-        <a href="" id="start-btn">Get Started For Free</a>
-    </div>
-    `
+// card1.addEventListener('click',infoMovie);
+// function infoMovie(){
+//     cardDesign.innerHTML = `
+//     <div class="position-absolute top-50 start-50 translate-middle" id="formbox">
+//         <div class="card mb-2" style="max-width: 940px;">
+//           <a type="button" class="btn btn-primary position-absolute top-0 end-0" href="./index.html">close</a>
+
+//             <div class="row g-0">
+//               <div class="col-md-4">
+//                 <img id="movie-poster" src="./public/imgs/Jack.jpg" class="img-fluid rounded-start" alt="...">
+//               </div>
+//               <div class="col-md-8">
+//                 <div class="card-body">
+//                   <h5 class="card-title" id="movie-title">Card title</h5>
+//                   <p class="card-text" id="movie-plot">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+//                   <p class="card-text" id="movie-country"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+//                   <p class="card-text" id="movie-language">London</p>
+//                   <p class="card-text" id="movie-genre">Drama</p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//     </div>
+//     `
     
     
     
-}
+// }
