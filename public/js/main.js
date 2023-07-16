@@ -4,7 +4,7 @@ let search = document.querySelector('#search');
 let cardDesign=document.querySelector('.body')
 // card1.addEventListener('click',cards);
 let api_key ='726fa854';
-moviesTitle = ['ALien','Mission Impossible','Merlin','the Lord of the Rings']
+moviesTitle = ['Fast','Mission Impossible','Extraction','the Lord of the Rings']
 async function generateMovie(title){
     return await fetch(`https://www.omdbapi.com/?t=${title}&apikey=${api_key}`).then(res=>res.json())
 }
