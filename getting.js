@@ -1,7 +1,8 @@
 const card1=document.querySelector('#title1');
 let btnSearch=document.querySelector('#btnSearch');
 let search = document.querySelector('#search');
-let cardDesign=document.querySelector('.body')
+let cardDesign=document.querySelector('.body');
+let searchResults=document.querySelector('#output')
 // card1.addEventListener('click',cards);
 let api_key ='726fa854';
 moviesTitle = ['ALien','Mission Impossible','Merlin','the Lord of the Rings']
@@ -43,7 +44,12 @@ async function generateMovieSearch(movie){
      movie=Value
     const res= await fetch(`https://www.omdbapi.com/?t=${movie}&apikey=${api_key}`).then(res=>res.json())
     if(res.Response =='True'){
-      console.log(res);
+      searchResults.innerHTML=`
+      <div>
+        ${res.Title}
+      </div>
+      `
+    // console.log(res);
     }else{
       Snackbar.show({
         pos: 'top-right',
@@ -54,7 +60,6 @@ async function generateMovieSearch(movie){
                //Set opacity of element to 0 to close Snackbar
                $(element).css('opacity', 0);
                alert('Clicked Called!');
-            
            }
         });
       

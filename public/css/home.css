@@ -25,3 +25,11 @@
   bottom:-20vh ;
   border: none;
 }
+/* div{
+    display: inline;
+    
+} */
+.justify-content-end {
+    justify-content: flex-end !important;
+  }
+

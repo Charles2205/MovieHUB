@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./public/css/bootstrap.css">
-    <link rel="stylesheet" href="./public/css/home.css">
-
-</head>
-<body>
-    <div class="position-absolute top-50 start-50 translate-middle" id="formbox">
+    <link rel="stylesheet" href="./public/css/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/home.css" />
+  </head>
+  <body>
+    <!-- <div class="position-absolute top-50 start-50 translate-middle" id="formbox">
         <div class="card mb-2" style="max-width: 940px;">
           <a type="button" class="btn btn-primary position-absolute top-0 end-0" href="./test.html">close</a>
 
@@ -28,6 +27,17 @@
               </div>
             </div>
           </div>
-    </div>
-</body>
+    </div> -->
+
+    <input type="text" placeholder="example" id="search" />
+    <a href="" id="btn_search">Button</a>
+    <script>
+      let btnSearch = document.querySelector('#btn_search');
+      let search = document.querySelector('#search')
+      btnSearch.addEventListener('click',function(){
+        let value = search.value;
+       console.log(value)
+      })
+    </script>
+  </body>
 </html>
