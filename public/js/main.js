@@ -82,13 +82,44 @@ btnSearch.addEventListener("click", function () {
              <div class="container">
              <div class="my-5">
                 <span></span>
-                 <img class="img-fluid rounded-start" src="${res.Poster}" alt="">
+                 <img class="img-fluid rounded-start"id='imgBtn' src="${res.Poster}" alt="${res.Title}">
              </div>
             </div>
-
-             `;
+            `
+            const imageBtn = document.querySelector('#imgBtn');
+            imageBtn.addEventListener('click',getMovieInfos);
+            async function getMovieInfos(){
+                    const movie = await generateMovie(imageBtn.alt);
+                    cardDesign.innerHTML = `
+                    <br>
+                  <div class="position-absolute top-50 start-50 translate-middle" id="formbox">
+                  <div class="card mb-2" style="max-width: 940px;">
+                     <a type="button" class="btn btn-primary position-absolute top-0 end-0" href="">close</a>
+                
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img id="movie-poster" src="${movie.Poster}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                          <span class = 'green'>Title </span>: ${movie.Title}<br><br>
+                               <span class = 'green'>Year </span>: ${movie.Year} <br><br>
+                               <span class = 'green'>Plot </span>: ${movie.Plot} <br><br>
+                               <span class = 'green'>Country </span>: ${movie.Country} <br><br>
+                               <span class = 'green'>Language </span>: ${movie.Language} <br><br>
+                               <span class = 'green'>Genre </span>: ${movie.Genre} <br><br>
+                               <span class = 'green'>Actors </span>: ${movie.Actors} <br><br>
+                               <span class = 'green'>Relased </span>: ${movie.Released} <br><br>
+                               <span class = 'green'>Runtime </span>: ${movie.Runtime} <br><br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  `};
+            
+            
       console.log(movie);
-      // class="img-fluid rounded-start"
     } else {
       Snackbar.show({
         pos: "top-right",
