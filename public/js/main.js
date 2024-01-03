@@ -119,7 +119,7 @@ btnSearch.addEventListener("click", function () {
                   `};
             
             
-      console.log(movie);
+      // console.log(movie);
     } else {
       Snackbar.show({
         pos: "top-right",

@@ -77,8 +77,22 @@ btnSearch.addEventListener("click", function () {
       `https://www.omdbapi.com/?t=${movie}&apikey=${api_key}`
     ).then((res) => res.json());
     if (res.Response == "True") {
-      searchResults.innerHTML = `
-            
+        // adding the preloader feature
+        searchResults.innerHTML =`
+            <div class="d-flex justify-content-center" id="preloader" >
+            <div class="spinner-border"role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+            </div>
+            `
+            const preLoader =document.querySelector('#preloader');
+            preLoader.addEventListener('load',function(){
+            preLoader.classList.add('fade-out-animation')
+            })
+        
+        
+        searchResults.innerHTML = `
+
              <div class="container">
              <div class="my-5">
                 <span></span>
