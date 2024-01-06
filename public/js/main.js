@@ -82,6 +82,7 @@ btnSearch.addEventListener("click", function () {
              <div class="container">
              <div class="my-5">
                 <span></span>
+                <br></br>
                  <img class="img-fluid rounded-start"id='imgBtn' src="${res.Poster}" alt="${res.Title}">
              </div>
             </div>
