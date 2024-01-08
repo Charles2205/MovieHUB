@@ -42,7 +42,7 @@ async function createMovies() {
               <div class="col-md-4">
                 <img id="movie-poster" src="${movie.Poster}" class="img-fluid rounded-start" alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <div class="card-body">
                 <span class = 'green'>Title </span>: ${movie.Title}<br><br>
                      <span class = 'green'>Year </span>: ${movie.Year} <br><br>
